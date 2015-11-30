@@ -1,0 +1,86 @@
+allprojects {
+    repositories {
+        jcenter()
+    }
+
+}
+
+ext {
+
+    //Android
+    androidBuildToolsVersion = "23.0.2"
+    androidMinSdkVersion = 15
+    androidTargetSdkVersion = 23
+    androidCompileSdkVersion = 23
+    androidApplicationId = 'com.woniu.zhihu'
+    androidVersionCode = 1
+    androidVersionName = "1.0"
+
+    //google官方
+    designVersion = "23.1.1"
+    v7Version = "23.1.1"        //包括recyclerview-v7、appcompat-v7、cardview-v7
+    androidAnnotationsVersion = '20.0.0'
+
+    //第三方
+    daggerVersion = '2.0'
+    butterKnifeVersion = '7.0.1'
+    rxJavaVersion = '1.0.16'
+    rxAndroidVersion = '1.0.1'
+    rxBindingVersion = '0.3.0'
+    javaxAnnotationVersion = '10.0-b28'
+    gsonVersion = '2.3'
+    okHttpVersion = '2.6.0'
+    okHttpUrlconnectionVersion = '2.1.0'
+    retrofitVersion = "2.0.0-beta2"
+    loggerVersion = "1.12"
+
+    robolectricVersion = '2.4'
+    jUnitVersion = '4.11'
+    mockitoVersion = '1.9.5'
+    dexmakerVersion = '1.0'
+    espressoVersion = '2.0'
+    testingSupportLibVersion = '0.1'
+    multidexVersion = '1.0.0'
+    sprinklesVersion = '1.3.0'
+    frescoVersion = '0.8.1'
+
+
+    loadingeverywhereVersion = "1.1.1"
+    materialloadingprogressbarVersion = "0.5.4-RELEASE"
+
+    circleimageviewVersion = "1.3.0"
+    eventbusVersion = "2.2.1"
+    CommomDependencies = [
+            daggerCompiler            : "com.google.dagger:dagger-compiler:${daggerVersion}",
+            dagger                    : "com.google.dagger:dagger:${daggerVersion}",
+            butterKnife               : "com.jakewharton:butterknife:${butterKnifeVersion}",
+            recyclerView              : "com.android.support:recyclerview-v7:${v7Version}",
+            rxJava                    : "io.reactivex:rxjava:${rxJavaVersion}",
+            rxAndroid                 : "io.reactivex:rxandroid:${rxAndroidVersion}",
+            javaxAnnotation           : "org.glassfish:javax.annotation:${javaxAnnotationVersion}",
+            mockito                   : "org.mockito:mockito-core:${mockitoVersion}",
+            dexmaker                  : "com.google.dexmaker:dexmaker:${dexmakerVersion}",
+            dexmakerMockito           : "com.google.dexmaker:dexmaker-mockito:${dexmakerVersion}",
+            espresso                  : "com.android.support.test.espresso:espresso-core:${espressoVersion}",
+            testingSupportLib         : "com.android.support.test:testing-support-lib:${testingSupportLibVersion}",
+            junit                     : "junit:junit:${jUnitVersion}",
+            okHttp                    : "com.squareup.okhttp:okhttp:${okHttpVersion}",
+            okHttpUrlconnection       : "com.squareup.okhttp:okhttp-urlconnection:${okHttpUrlconnectionVersion}",
+            gson                      : "com.google.code.gson:gson:${gsonVersion}",
+            androidAnnotations        : "com.android.support:support-annotations:${androidAnnotationsVersion}",
+            robolectric               : "org.robolectric:robolectric:${robolectricVersion}",
+            multidex                  : "com.android.support:multidex:${multidexVersion}",
+            sprinkles                 : "se.emilsjolander:sprinkles:${sprinklesVersion}",
+            fresco                    : "com.facebook.fresco:fresco:${frescoVersion}",
+            appcompat_v7              : "com.android.support:appcompat-v7:${v7Version}",
+            retrofit                  : "com.squareup.retrofit:retrofit:${retrofitVersion}",
+            materialloadingprogressbar: "com.lsjwzh:materialloadingprogressbar:${materialloadingprogressbarVersion}",
+            loadingeverywhere         : "com.lsjwzh:loadingeverywhere:${loadingeverywhereVersion}",
+            umengAnalytics            : "com.umeng.analytics:analytics:latest.integration",
+            design                    : "com.android.support:design:${designVersion}",
+            cardview                  : "com.android.support:cardview-v7:${v7Version}",
+            circleimageview           : "de.hdodenhof:circleimageview:${circleimageviewVersion}",
+            eventbus                  : "de.greenrobot:eventbus:${eventbusVersion}",
+            logger                    : "com.orhanobut:logger:${loggerVersion}"
+    ]
+}
